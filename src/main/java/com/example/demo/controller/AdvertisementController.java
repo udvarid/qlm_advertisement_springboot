@@ -32,7 +32,7 @@ public class AdvertisementController {
     }
 
     @PostMapping("/save")
-    public String saveEmployee(@ModelAttribute("advertisement") AdvertisementImpl advertisement) {
+    public String saveAdvertisement(@ModelAttribute("advertisement") AdvertisementImpl advertisement) {
         manager.registerNewAdvertisement(advertisement);
         return "redirect:/";
     }
